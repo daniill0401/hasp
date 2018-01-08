@@ -1,0 +1,72 @@
+.seventh_wrapper {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 2.3em;
+  background-image: url(../img/seventh_steps.png);
+  background-position: right 13em;
+  background-size: 62em auto;
+  background-repeat: no-repeat; }
+
+.seventh_inner {
+  display: inline-flex;
+  width: 70em;
+  height: 23em;
+  margin-top: -4em; }
+
+.seventh_title {
+  font-weight: 400;
+  font-size: 3.1em;
+  position: relative;
+  z-index: 100; }
+
+.seventh_block {
+  flex: 0 0 33%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .seventh_block-content {
+    flex-grow: 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: left;
+    padding-left: 2em; }
+    .seventh_block-content > * {
+      display: inline-block;
+      vertical-align: middle;
+      white-space: normal; }
+  .seventh_block-1 .seventh_icon {
+    width: 3.7em; }
+  .seventh_block-1 .seventh_block-content {
+    padding-left: 1.4em; }
+  .seventh_block-2 {
+    border-radius: 50%;
+    background-color: #5EC7C0;
+    color: #fff;
+    flex-basis: 23em; }
+    .seventh_block-2 .seventh_icon {
+      width: 3.7em; }
+    .seventh_block-2 .seventh_block-content {
+      padding-left: 2em; }
+    .seventh_block-2 .seventh_arrow {
+      margin-left: 3em; }
+  .seventh_block-3 .seventh_icon {
+    width: 3.3em; }
+  .seventh_block-3 .seventh_block-content {
+    padding-left: 4em; }
+  .seventh_block-3 .seventh_circle {
+    margin-left: 1.15em; }
+
+.seventh_desc {
+  margin-left: .7em;
+  font-size: .9em; }
+
+.seventh_circle {
+  width: .7em;
+  height: .7em;
+  margin-left: .4em;
+  background-color: #5EC7C0;
+  border-radius: 50%; }
+
+.seventh_arrow {
+  width: 3.6em;
+  margin-left: 4.5em; }

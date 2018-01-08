@@ -1,0 +1,52 @@
+.fifth_wrapper {
+  text-align: center;
+  background-color: #f6fdfc; }
+  .fifth_wrapper * {
+    font-family: "Gotha-medium", sans-serif; }
+
+.fifth_inner {
+  display: inline-flex;
+  width: 74.5em;
+  text-align: left;
+  padding-left: 1em; }
+
+.fifth_left {
+  flex: 0 0 18.5em;
+  background-image: url(../img/fifth_left.png);
+  background-size: 100% auto;
+  background-repeat: repeat-y; }
+
+.fifth_middle {
+  padding: 3.2em 0 2.9em 4.1em;
+  flex: 0 0 34em;
+  background-image: url(../img/fifth_calc.png);
+  background-position: right 11em;
+  background-repeat: no-repeat; }
+
+.fifth_title {
+  font-weight: 400;
+  width: 8em;
+  font-size: 3.1em;
+  line-height: 1.2em;
+  margin-top: .4em; }
+
+.fifth_desc {
+  width: 13em;
+  font-size: 1.1em; }
+
+.fifth_caption {
+  margin-top: 1.6em;
+  text-transform: uppercase; }
+  .fifth_caption > * {
+    display: inline-block;
+    vertical-align: middle; }
+  .fifth_caption-text {
+    font-weight: 400;
+    color: #aaa;
+    width: 24em;
+    max-width: 100%;
+    margin-top: .5em;
+    line-height: 1.3em;
+    margin-left: .2em;
+    letter-spacing: 1px;
+    font-size: .66em; }

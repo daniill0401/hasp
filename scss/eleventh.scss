@@ -1,0 +1,27 @@
+.eleventh {
+	&_wrapper {
+		margin-bottom: 0;
+	}
+
+	&_title {
+		width: 10em;
+		margin-bottom: 0;
+	}
+
+	&_desc {
+		width: 20em;
+		margin-top: 1.4em;
+	}
+
+	&_middle {
+		padding-top: 1em;
+		background-image: url(../img/ticket.png);
+		background-position: right 7em;
+	}
+
+	&_caption {
+		&-green {
+			color: #00a59b;
+		}
+	}
+}

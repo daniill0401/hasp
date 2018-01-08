@@ -1,0 +1,143 @@
+@import "vars";
+
+.sixth {
+	&_wrapper {
+		position: relative;
+		text-align: center;
+		padding-top: 3.3em;
+		overflow: hidden;
+	}
+
+	&_title {
+		font-size: 3.1em;
+		font-weight: 400;
+	}
+
+	&_letter {
+		position: absolute;
+		top: -11.6em;
+		left: 4%;
+		width: 15em;
+	}
+
+	&_blocks {
+		&-outer {
+			position: relative;
+			display: inline-block;
+			width: 75em;
+			height: 36em;
+			margin-top: .6em;
+		}
+		&-inner {
+			text-align: left;
+			width: 100%;
+			height: 100%;
+			display: inline-flex;
+			flex-wrap: wrap;
+			border-top: 1px solid rgba(0,0,0,.2);
+			border-right: 1px solid rgba(0,0,0,.2);
+		}
+		&-more {
+			position: absolute;
+			top: 0;left: 0;
+			width: 100%;height: 100%;
+			display: none;
+			padding-bottom: 3em;
+			border: 1px solid rgba(0,0,0,.2);
+		}
+
+		&-desc {
+			height: 90%;
+			text-align: left;
+			padding: 2em 3em;
+			margin-top: 5%;
+			overflow: auto;
+			line-height: 1.4em;
+			font-weight: 400;
+		}
+	}
+
+	&_block {
+		position: relative;
+		flex-basis: 25%;
+		border-left: 1px solid rgba(0,0,0,.2);
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: .9em;
+		padding-left: 3.6em;
+		padding-right: 1em;
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: all ease-in-out .2s;
+		&:hover {
+			box-shadow: 0 0 60px 0 rgba(0,0,0,0.25);
+		}
+	}
+
+	&_text {
+	
+	}
+
+	&_number {
+		font-size: 3em;
+		color: #deefed;
+		position: absolute;
+		bottom: 1%;right: 5%;
+	}
+
+	&_count {
+		display: block;
+		margin: .3em auto;
+		font-size: 3em;
+		color: #deefed;
+	}
+
+	&_controls {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&_back, &_next  {
+		position: absolute;
+		top: 2em;
+		left: 3em;
+		cursor: pointer;
+		& > * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&-text {
+			color: #5EC7C0;
+		}
+	}
+
+	&_next  {
+		left: auto;
+		right: 3em;
+	}
+
+	&_bound {
+		position: absolute;
+		bottom: 0;
+		right: -100%;
+		width: 100%;
+		height: 65.6666%;
+		background-image: url(../img/sixth_bound.png);
+	}
+
+	&_cross {
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
+		width: 1.6em;
+		cursor: pointer;
+		transition: all ease-in-out .4s;
+		&:hover {
+			transform: rotate(180deg)
+		}
+	}
+}

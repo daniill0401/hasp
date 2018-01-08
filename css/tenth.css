@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.tenth_wrapper {
+  text-align: center;
+  background-image: url(../img/С.png);
+  background-position: 33% top;
+  background-size: 16em auto;
+  background-repeat: no-repeat;
+  padding-bottom: 3.8em; }
+
+.tenth_title {
+  margin: 1em 0; }
+
+.tenth_slider-outer {
+  position: relative;
+  width: 71em;
+  margin: 1em auto;
+  padding-top: 2em; }
+
+.tenth_slider-arrows {
+  position: absolute;
+  top: -2.3em;
+  right: -2em;
+  z-index: 100; }
+
+.tenth_slider-arrow {
+  width: 3em;
+  height: 2em;
+  display: inline-block;
+  cursor: pointer;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+  .tenth_slider-arrow-right {
+    background-image: url(../img/arrow_right.png);
+    margin-left: 1.7em; }
+  .tenth_slider-arrow-left {
+    background-image: url(../img/arrow_left.png); }
+
+.tenth_slide {
+  padding: 0 1em; }
+
+.tenth_cert {
+  width: 20em; }

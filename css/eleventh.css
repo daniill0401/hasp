@@ -1,0 +1,18 @@
+.eleventh_wrapper {
+  margin-bottom: 0; }
+
+.eleventh_title {
+  width: 10em;
+  margin-bottom: 0; }
+
+.eleventh_desc {
+  width: 20em;
+  margin-top: 1.4em; }
+
+.eleventh_middle {
+  padding-top: 1em;
+  background-image: url(../img/ticket.png);
+  background-position: right 7em; }
+
+.eleventh_caption-green {
+  color: #00a59b; }

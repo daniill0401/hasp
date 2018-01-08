@@ -1,0 +1,59 @@
+
+@import "vars";
+
+.tenth {
+	&_wrapper {
+		text-align: center;
+		background-image: url(../img/С.png);
+		background-position: 33% top;
+		background-size: 16em auto;
+		background-repeat: no-repeat;
+		padding-bottom: 3.8em;
+	}
+
+	&_title {
+		margin: 1em 0;
+	}
+
+	&_slider {
+		&-outer {
+			position: relative;
+			width: 71em;
+			margin: 1em auto;
+			padding-top: 2em;
+		}
+		&-inner {
+			
+		}
+		&-arrows {
+			position: absolute;
+			top: -2.3em;right: -2em;
+			z-index: 100;
+		}
+		&-arrow {
+			width: 3em;
+			height: 2em;
+			display: inline-block;
+			cursor: pointer;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			&-right {
+				background-image: url(../img/arrow_right.png);
+				margin-left: 1.7em;
+			}
+			&-left {
+				background-image: url(../img/arrow_left.png);
+			}
+		}
+	}
+
+	&_slide {
+		padding: 0 1em;
+	}
+
+	&_cert {
+		width: 20em;
+	}
+
+}

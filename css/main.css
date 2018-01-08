@@ -1,0 +1,228 @@
+@charset "UTF-8";
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px; }
+
+.title {
+  font-weight: 400;
+  font-size: 3.1em; }
+
+input.input:required {
+  box-shadow: none;
+  outline: none; }
+
+.input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding-left: 1.5em;
+  font-size: .8em;
+  line-height: 1.7em;
+  color: #aaa;
+  background: none; }
+  .input_wrapper {
+    position: relative;
+    margin-top: 1.8em; }
+    .input_wrapper:before, .input_wrapper:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.4); }
+    .input_wrapper:after {
+      left: auto;
+      right: 0; }
+    .input_wrapper.error:after, .input_wrapper.error:before {
+      background-color: rgba(255, 0, 0, 0.4); }
+  .input_state:before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    right: .3em;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .error .input {
+    color: red;
+    border-color: red; }
+  .error .input_state:before {
+    background-image: url(../img/error.png); }
+  .error .input_state:after {
+    content: "Это поле необходимо заполнить корректно";
+    position: absolute;
+    bottom: -1.4em;
+    left: 1em;
+    font-size: .7em;
+    color: rgba(255, 0, 0, 0.6); }
+  .success .input_state:before {
+    background-image: url(../img/check.png); }
+  .input_help {
+    position: relative; }
+    .input_help:before, .input_help:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 5%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.2); }
+    .input_help:after {
+      left: auto;
+      right: 0; }
+
+.button {
+  position: relative;
+  margin-top: 2.4em;
+  border: 1px solid #5EC7C0;
+  text-align: center; }
+  .button:before, .button:after, .button_text:before, .button_text:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #5EC7C0; }
+  .button:before {
+    top: 0;
+    left: 0; }
+  .button:after {
+    top: 0;
+    right: 0; }
+  .button_text {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .8em 0;
+    cursor: pointer;
+    z-index: 100;
+    color: #5EC7C0;
+    transition: all ease-in-out .3s; }
+    .button_text:before {
+      bottom: 0;
+      left: 0; }
+    .button_text:after {
+      bottom: 0;
+      right: 0; }
+    .button_text:hover {
+      background-color: #5EC7C0;
+      color: #fff; }
+  .button_lines-top, .button_lines-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    .button_lines-top:after, .button_lines-top:before, .button_lines-bottom:after, .button_lines-bottom:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px; }
+  .button_lines-top:before {
+    top: 0;
+    left: 0;
+    border-left: 1px solid #5EC7C0;
+    border-top: 1px solid #5EC7C0; }
+  .button_lines-top:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #5EC7C0;
+    border-top: 1px solid #5EC7C0; }
+  .button_lines-bottom:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #5EC7C0;
+    border-bottom: 1px solid #5EC7C0; }
+  .button_lines-bottom:after {
+    bottom: 0;
+    right: 0;
+    border-right: 1px solid #5EC7C0;
+    border-bottom: 1px solid #5EC7C0; }
+
+.button_white.button {
+  border-color: rgba(255, 255, 255, 0.6); }
+  .button_white.button:before, .button_white.button:after {
+    background-color: rgba(255, 255, 255, 0.6); }
+
+.button_white .button_text {
+  color: #fff; }
+  .button_white .button_text:before, .button_white .button_text:after {
+    background-color: rgba(255, 255, 255, 0.6); }
+  .button_white .button_text:hover {
+    background-color: white;
+    color: #5EC7C0; }
+
+.button_white .button_lines-top:after, .button_white .button_lines-top:before, .button_white .button_lines-bottom:after, .button_white .button_lines-bottom:before {
+  border-color: rgba(255, 255, 255, 0.7); }
+
+.politics {
+  text-transform: uppercase;
+  color: #aaa;
+  text-decoration: none;
+  font-size: .6em;
+  margin-top: 1.1em;
+  text-align: center; }
+  .politics span {
+    font-size: 2em;
+    color: #5EC7C0; }
+
+.form {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 22.5em; }
+  .form_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 19em;
+    padding-top: 1.4em; }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000000; }
+  .loader__img {
+    width: 5em; }
+
+.loading {
+  position: relative; }
+  .loading:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/static/elga_app/images/preloader.gif) !important;
+    background-size: 20% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    z-index: -1; }
+
+@media (max-width: 1400px) {
+  body {
+    font-size: 15px; } }
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 14px; } }
+
+@media (max-width: 1120px) {
+  body {
+    font-size: 13px; } }

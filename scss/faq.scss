@@ -1,0 +1,144 @@
+
+@import "vars";
+
+
+.faq {
+	&_wrapper {
+		background-image: url(../img/B.png), url(../img/bird.png);
+		background-position: 26% 0, 12% 1em;
+		background-repeat: no-repeat;
+		background-size: 14.5em auto;
+	}
+
+	&_inner {
+		width: 73em;
+		margin: auto;
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	&_right {
+		flex: 0 0 25%;
+		background-image: url(../img/faq_bound.png);
+		background-size: 100% auto;
+		background-repeat: repeat-y;
+	}
+
+	&_left {
+		padding-top: 2.6em;
+	}
+
+	&_title {
+		margin-left: 3.4em;
+	}
+
+	&_blocks {
+		padding-top: 3em;
+		overflow: hidden;
+	}
+
+
+	&_block {
+		position: relative;
+		border: 1px solid rgba(0,0,0,.1);
+		display: flex;
+		align-items: center;
+		padding: 1.1em 0;
+		padding-left: 3.1em;
+		padding-right: 2em;
+		cursor: pointer;
+		background-color: rgba(255,255,255,.8);
+		& > * {
+			position: relative;
+			z-index: 100;
+		}
+	}
+
+	&_number {
+		color: #00a59b;
+	}
+
+	&_question {
+		font-weight: 400;
+		font-size: 1.1em;
+		margin-left: .6em;
+		text-transform: uppercase;
+		flex-shrink: 1;
+	}
+
+	&_arrow {
+		position: absolute;
+		cursor: pointer;
+		width: 3em;
+		right: 1em;
+		top: 50%;
+		// transform-origin: 0 0;
+		transition: all ease-in-out .4s;
+		&-wrapper {
+			position: static;
+			flex-grow: 1;
+			text-align: right;
+		}
+		&-fake {
+			width: 3em;
+			height: 1em;
+		}
+	}
+
+	&_active .faq {
+		&_block {
+			background-image: url(../img/faq_block.png);
+			background-size: 100% auto;
+			background-repeat: repeat-y;
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;left: 0;
+				width: 100%;height: 100%;
+				background-color: rgba(218,242,240, .5);
+			}
+		}
+		&_arrow {
+			top: .6em;
+			transform: rotate(90deg);
+		}
+	}
+
+	&_answer {
+		&-wrapper {
+			background-color: #5ec7c0;
+			overflow: hidden;
+			transition: all ease-in-out .5s;
+		}
+		&-text {
+			& * {
+				color: #fff;
+				margin: 0;
+			}
+			color: #fff;
+			padding: 2em 6em;
+			font-size: .9em;
+			line-height: 1.8em;
+		}
+	}
+
+	&_more {
+		padding: 2em 0;
+		padding-right: 14%;
+		cursor: pointer;
+		text-align: right;
+		& > * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&-arrow {
+			width: 3.3em;
+			margin-left: .2em;
+		}
+		&-title {
+			text-transform: uppercase;
+			font-size: .85em;
+		}
+	}
+
+}

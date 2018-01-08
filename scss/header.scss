@@ -1,0 +1,36 @@
+
+@import "vars";
+
+.header {
+	position: fixed;
+	z-index: 10000;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to right, #5fbfb8, #5ec7c0);
+
+	&_inner {
+		width: 71em;
+		margin: auto;
+		padding: 1em 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&_button {
+		.button_text {
+			padding: .8em 2.8em;
+		}
+	}
+
+	&_phone {
+		& > * {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&-text {
+			text-align: left;
+			margin-left: .4em;
+		}
+	}
+}

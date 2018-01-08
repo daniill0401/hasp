@@ -1,0 +1,83 @@
+.secondblock {
+	text-align: center;
+	background-color: #f6fdfc;
+	// overflow: hidden;
+}
+
+.secondblock_inner
+{
+	position: relative;
+	width: 79em;
+	display: inline-flex;
+	justify-content: flex-start;
+	text-align: left;
+	height: 25em;
+
+	& * {
+		font-family: "Gotha-medium", sans-serif;
+	}
+}
+	.blueband
+	{
+		 
+		flex: 0 2 18.6em;
+		height: 100%;
+		margin-left: 4.9em;
+		background-image: url(../img/blueband.png);
+		background-repeat: repeat-x;
+		background-size: auto 100%;
+	}
+		.wordP
+		{
+			width: 15.3em;
+			left: 15em;
+			top: 1.8em;
+			position: absolute;
+			opacity: .1;
+			img {
+				width: 100%;
+			}
+		}
+	.textsecondblock
+	{
+		flex: 0 1 36.7em;
+		padding-top: 2.5em;
+		padding-left: 1em;
+		background-image: url(../img/write.png);
+		background-position: 90% 5.5em;
+		background-repeat: no-repeat;
+		background-size: 10em auto;
+	}
+
+		.textsecondblock h1
+		{
+			color: #3b3b3b;
+			font-weight: 500;
+			/* Text style for "П, олучи ч" */
+			font-size: 3.1em;
+			margin-bottom: 0;
+			padding-top: 1.9em;
+			z-index: 100;
+
+		}
+		.textsecondblock span
+		{
+			display: block;
+			font-size: 1.1em;
+			color: #3b3b3b;
+			font-weight: 500;
+			margin-top: 0;
+			z-index: 100;
+			line-height: 1.4em;
+
+		}
+
+.second {
+	&_form {
+		justify-content: flex-start;
+		&-inner {
+			padding-top: 2.8em;
+			justify-content: flex-start;
+		}
+	}
+}

@@ -1,0 +1,102 @@
+@import "vars";
+
+.seventh {
+
+	&_wrapper {
+		text-align: center;
+		padding-top: 4em;
+		padding-bottom: 2.3em;
+		background-image: url(../img/seventh_steps.png);
+		background-position: right 13em;
+		background-size: 62em auto;
+		background-repeat: no-repeat;
+	}
+
+	&_inner {
+		display: inline-flex;
+		width: 70em;
+		height: 23em;
+		margin-top: -4em;
+	}
+
+	&_title {
+		font-weight: 400;
+		font-size: 3.1em;
+		position: relative;
+		z-index: 100;
+	}
+
+	&_block {
+		flex: 0 0 33%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		&-content {
+			flex-grow: 0;
+			text-transform: uppercase;
+			white-space: nowrap;
+			text-align: left;
+			padding-left: 2em;
+			& > * {
+				display: inline-block;
+				vertical-align: middle;
+				white-space: normal;
+			}
+		}
+
+		&-1 {
+			.seventh_icon {
+				width: 3.7em;
+			}
+			.seventh_block-content {
+				padding-left: 1.4em;
+			}
+		}
+
+		&-2 {
+			border-radius: 50%;
+			background-color: $main_color;
+			color: #fff;
+			flex-basis: 23em;
+			.seventh_icon {
+				width: 3.7em;
+			}
+			.seventh_block-content {
+				padding-left: 2em;
+			}
+			.seventh_arrow {
+				margin-left: 3em;
+			}
+		}
+		&-3 {
+			.seventh_icon {
+				width: 3.3em;
+			}
+			.seventh_block-content {
+				padding-left: 4em;
+			}
+			.seventh_circle {
+				margin-left: 1.15em;
+			}
+		}
+	}
+
+	&_desc {
+		margin-left: .7em;
+		font-size: .9em;
+	}
+
+	&_circle {
+		width: .7em;
+		height: .7em;
+		margin-left: .4em;
+		background-color: $main_color;
+		border-radius: 50%;
+	}
+
+	&_arrow {
+		width: 3.6em;
+		margin-left: 4.5em;
+	}
+}

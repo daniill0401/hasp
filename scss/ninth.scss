@@ -1,0 +1,237 @@
+@import "vars";
+
+$height: 54.2em;
+
+.ninth {
+	&_wrapper {
+		position: relative;
+		text-align: center;
+		border: 1px solid transparent;
+		margin-top: -.4em;
+		height: $height;
+	}
+	&_inner {
+		position: absolute;
+		display: flex;
+		height: $height;
+		left: 0;top: 0;
+		width: 100%;
+	}
+
+	&_title {
+		font-weight: 400;
+		font-size: 3.1em;
+		position: relative;
+		z-index: 100;
+		margin-top: 1.6em;
+	}
+
+	&_part {
+		flex: 0 0 50%;
+	}
+
+	&_left {
+		position: relative;
+		background-color: $main_color;
+		overflow: hidden;
+		background-image: url(../img/П.png);
+		background-position: 75% 3em;
+		background-size: 15.2em auto;
+		background-repeat: no-repeat;
+	}
+
+	&_circle {
+		$side: 34em;
+		position: absolute;
+		right: 0;
+		top: 58%;
+		margin-top: -#{$side/2};
+		margin-right: -#{$side/2};
+		width: $side;
+		height: $side;
+		// border: 2px solid rgba(255,255,255,.7);
+		border-radius: 50%;
+		transition: all ease-in-out .5s;
+		&-title {
+			position: absolute;
+			color: #fff;
+			top: 50%;
+			right: 1em;
+			margin-top: 1em;
+			font-size: 2.3em;
+			text-align: right;
+			width: 100%;
+		}
+		&-svg {
+			width: 100%;
+			height: 100%;
+			fill: none;
+			// stroke: blue;
+			stroke: white;
+			stroke-width: 1px;
+			// stroke-dasharray: 5em;
+			stroke-dasharray: 26.1%;
+			stroke-dashoffset: 13.3%;
+		}
+		&-icon {
+			&, &-active {
+				position: absolute;
+				top: 4%;left: 4.2%;
+				width: 92%;height: 92%;
+				border-radius: 50%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 50% auto;
+				z-index: 100;
+				transition: all ease-in-out .3s;
+			}
+			&-active {
+				width: 80%;height: 80%;
+				top: 10%;left: 10%;
+				opacity: 0;
+			}
+		}
+		&-item {
+			$item_side: 5em;
+			position: absolute;
+			width: $item_side;
+			height: $item_side;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: all ease-in-out .5s;
+
+			&-inner {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				border: 1px solid rgba(255,255,255,.6);
+				border-radius: 50%;
+				transition: all ease-in-out .5s;
+				// &:before, &:after {
+				// 	content: "";
+				// 	position: absolute;
+				// 	top: 4%;left: 4.2%;
+				// 	width: 92%;height: 92%;
+				// 	border-radius: 50%;
+				// 	border: 1px solid rgba(255,255,255,.6);
+				// 	background-position: center center;
+				// 	background-repeat: no-repeat;
+				// 	background-size: 50% auto;
+				// 	z-index: 100;
+				// }
+				// &:after {
+				// 	border: 0;
+				// 	background-color: $main_color;
+				// 	z-index: 50;
+				// }
+			}
+			&.circle_active {
+				background-color: rgba(255,255,255,.9);
+				transform: scale(1.1);
+				.ninth_circle-item {
+					&-inner {
+						transform: scale(1.15);
+						.ninth_circle-icon {
+							opacity: 0;
+						}
+						.ninth_circle-icon-active {
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			&[data-index='1'] {
+				top: 0;
+				margin-top: -#{$item_side/2};
+				margin-right: -#{$item_side/2};
+				right: 50%;
+				.ninth_circle-item-inner:before {
+					background-image: url(../img/ninth_audit.png);
+				}
+			}
+			&[data-index='2'], &[data-index='6'] {
+				top: 50%;
+				margin-top: -#{$item_side*2.25};
+				left: 0;
+				.ninth_circle-item-inner:before {
+					background-image: url(../img/ninth_aid.png);
+				}
+			}
+			&[data-index='3'], &[data-index='5'] {
+				bottom: 50%;
+				margin-bottom: -#{$item_side*2.25};
+				left: 0;
+				.ninth_circle-item-inner:before {
+					background-image: url(../img/ninth_docs.png);
+				}
+			}
+			&[data-index='4'] {
+				bottom: 0;
+				margin-bottom: -#{$item_side/2};
+				margin-right: -#{$item_side/2};
+				right: 50%;
+				.ninth_circle-item-inner:before {
+					background-image: url(../img/ninth_audit.png);
+				}
+			}
+			&[data-index='5'] {
+				left: auto;
+				right: 0;
+				margin-bottom: -10.8em;
+			}
+			&[data-index='6'] {
+				left: auto;
+				right: 0;
+				margin-top: -10.6em;
+			}
+		}
+	}
+
+	&_right {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		background-image: url(../img/ninth_bound.png);
+		background-repeat: no-repeat;
+		background-position: 45% 80%;
+		&-inner {
+			position: relative;
+		}
+		&-title {
+			font-weight: 400;
+			width: 13em;
+			font-size: 3em;
+			text-align: left;
+			padding-left: 2em;
+			margin-top: 2em;
+		}
+	}
+
+	&_arrows {
+		text-align: right;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: 13em;
+		margin-left: 3em;
+	}
+
+	&_arrow {
+		width: 3em;
+		display: inline-block;
+		cursor: pointer;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		height: 2em;
+		&-right {
+			background-image: url(../img/ninth_arrow-right.png);
+			margin-left: 3.5em;
+		}
+		&-left {
+			background-image: url(../img/ninth_arrow-left.png);
+		}
+	}
+
+}

@@ -1,0 +1,25 @@
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 71em;
+  margin: auto;
+  max-width: 100%;
+  padding: 3em 0; }
+
+.footer_link {
+  color: #00a59b;
+  display: block;
+  font-size: .8em;
+  text-decoration: underline;
+  line-height: 2em; }
+
+.footer_desc {
+  font-size: .8em;
+  line-height: 1.5em;
+  width: 20em;
+  max-width: 100%; }
+
+.footer_copy {
+  margin-top: 2em;
+  font-size: .8em;
+  color: #aaa; }

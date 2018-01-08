@@ -1,0 +1,176 @@
+@charset "UTF-8";
+.ninth_wrapper {
+  position: relative;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-top: -.4em;
+  height: 54.2em; }
+
+.ninth_inner {
+  position: absolute;
+  display: flex;
+  height: 54.2em;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+.ninth_title {
+  font-weight: 400;
+  font-size: 3.1em;
+  position: relative;
+  z-index: 100;
+  margin-top: 1.6em; }
+
+.ninth_part {
+  flex: 0 0 50%; }
+
+.ninth_left {
+  position: relative;
+  background-color: #5EC7C0;
+  overflow: hidden;
+  background-image: url(../img/П.png);
+  background-position: 75% 3em;
+  background-size: 15.2em auto;
+  background-repeat: no-repeat; }
+
+.ninth_circle {
+  position: absolute;
+  right: 0;
+  top: 58%;
+  margin-top: -17em;
+  margin-right: -17em;
+  width: 34em;
+  height: 34em;
+  border-radius: 50%;
+  transition: all ease-in-out .5s; }
+  .ninth_circle-title {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    right: 1em;
+    margin-top: 1em;
+    font-size: 2.3em;
+    text-align: right;
+    width: 100%; }
+  .ninth_circle-svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: white;
+    stroke-width: 1px;
+    stroke-dasharray: 26.1%;
+    stroke-dashoffset: 13.3%; }
+  .ninth_circle-icon, .ninth_circle-icon-active {
+    position: absolute;
+    top: 4%;
+    left: 4.2%;
+    width: 92%;
+    height: 92%;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    z-index: 100;
+    transition: all ease-in-out .3s; }
+  .ninth_circle-icon-active {
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    opacity: 0; }
+  .ninth_circle-item {
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease-in-out .5s; }
+    .ninth_circle-item-inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      transition: all ease-in-out .5s; }
+    .ninth_circle-item.circle_active {
+      background-color: rgba(255, 255, 255, 0.9);
+      transform: scale(1.1); }
+      .ninth_circle-item.circle_active .ninth_circle-item-inner {
+        transform: scale(1.15); }
+        .ninth_circle-item.circle_active .ninth_circle-item-inner .ninth_circle-icon {
+          opacity: 0; }
+        .ninth_circle-item.circle_active .ninth_circle-item-inner .ninth_circle-icon-active {
+          opacity: 1; }
+    .ninth_circle-item[data-index='1'] {
+      top: 0;
+      margin-top: -2.5em;
+      margin-right: -2.5em;
+      right: 50%; }
+      .ninth_circle-item[data-index='1'] .ninth_circle-item-inner:before {
+        background-image: url(../img/ninth_audit.png); }
+    .ninth_circle-item[data-index='2'], .ninth_circle-item[data-index='6'] {
+      top: 50%;
+      margin-top: -11.25em;
+      left: 0; }
+      .ninth_circle-item[data-index='2'] .ninth_circle-item-inner:before, .ninth_circle-item[data-index='6'] .ninth_circle-item-inner:before {
+        background-image: url(../img/ninth_aid.png); }
+    .ninth_circle-item[data-index='3'], .ninth_circle-item[data-index='5'] {
+      bottom: 50%;
+      margin-bottom: -11.25em;
+      left: 0; }
+      .ninth_circle-item[data-index='3'] .ninth_circle-item-inner:before, .ninth_circle-item[data-index='5'] .ninth_circle-item-inner:before {
+        background-image: url(../img/ninth_docs.png); }
+    .ninth_circle-item[data-index='4'] {
+      bottom: 0;
+      margin-bottom: -2.5em;
+      margin-right: -2.5em;
+      right: 50%; }
+      .ninth_circle-item[data-index='4'] .ninth_circle-item-inner:before {
+        background-image: url(../img/ninth_audit.png); }
+    .ninth_circle-item[data-index='5'] {
+      left: auto;
+      right: 0;
+      margin-bottom: -10.8em; }
+    .ninth_circle-item[data-index='6'] {
+      left: auto;
+      right: 0;
+      margin-top: -10.6em; }
+
+.ninth_right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../img/ninth_bound.png);
+  background-repeat: no-repeat;
+  background-position: 45% 80%; }
+  .ninth_right-inner {
+    position: relative; }
+  .ninth_right-title {
+    font-weight: 400;
+    width: 13em;
+    font-size: 3em;
+    text-align: left;
+    padding-left: 2em;
+    margin-top: 2em; }
+
+.ninth_arrows {
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 13em;
+  margin-left: 3em; }
+
+.ninth_arrow {
+  width: 3em;
+  display: inline-block;
+  cursor: pointer;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 2em; }
+  .ninth_arrow-right {
+    background-image: url(../img/ninth_arrow-right.png);
+    margin-left: 3.5em; }
+  .ninth_arrow-left {
+    background-image: url(../img/ninth_arrow-left.png); }
